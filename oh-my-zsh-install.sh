@@ -1,4 +1,4 @@
-apt install zsh
+apt install zsh -y
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
 # configure for theme
@@ -18,3 +18,6 @@ else
     # 如果没有 plugins 配置，则添加
     echo "plugins=($NEW_PLUGINS)" >> ~/.zshrc
 fi
+
+#  reload config
+source ~/.zshrc
