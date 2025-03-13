@@ -15,4 +15,6 @@ NEW_PLUGINS="git zsh-autosuggestions zsh-syntax-highlighting"
 # 替换现有的 plugins 行
 sed -i "s/^plugins=(.*)/plugins=($NEW_PLUGINS)/" ${CONFIG_FILE}
 #  reload config
+echo '##################'
 echo 'finally,you need run "source ~/.zshrc" now..'
+echo '##################'
