@@ -21,4 +21,5 @@ else
 fi
 
 #  reload config
+echo 'source....'
 source ~/.zshrc
