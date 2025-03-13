@@ -1,4 +1,5 @@
-apt install zsh -y
+sudo apt update
+sudo apt install zsh -y
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
 # configure for theme
