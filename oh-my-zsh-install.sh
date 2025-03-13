@@ -16,5 +16,5 @@ NEW_PLUGINS="git zsh-autosuggestions zsh-syntax-highlighting"
 sed -i "s/^plugins=(.*)/plugins=($NEW_PLUGINS)/" ${CONFIG_FILE}
 #  reload config
 echo '##################'
-echo 'finally,you need run "source ~/.zshrc" now..'
+echo 'finally,you need run "source ~/.zshrc" mannually now..'
 echo '##################'
