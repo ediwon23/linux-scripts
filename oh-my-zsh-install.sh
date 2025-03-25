@@ -23,13 +23,4 @@ sed -i "s/^plugins=(.*)/plugins=(${NEW_PLUGINS})/" "${CONFIG_FILE}"
 
 # 设置默认 shell 为 zsh
 chsh -s "$(command -v zsh)"
-
-
-# 启动 zsh
-#zsh --login
-#source ~/.zshrc
-# 提示用户手动重启 shell
-echo '##################'
-echo 'Installation complete!'
-echo 'Please restart your terminal or run "exec zsh" to apply changes.'
-echo '##################' 
+zsh
