@@ -13,7 +13,7 @@ NEW_THEME="dst"
 sed -i "s/^ZSH_THEME=\".*\"/ZSH_THEME=\"$NEW_THEME\"/" "${CONFIG_FILE}"
 
 # 安装插件
-ZSH_CUSTOM="${ZSH_CUSTOM:-~/.oh-my-zsh/custom}"
+ZSH_CUSTOM="${ZSH_CUSTOM:-${HOME}/.oh-my-zsh/custom}"
 git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM}/plugins/zsh-autosuggestions"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting"
 
@@ -23,6 +23,10 @@ sed -i "s/^plugins=(.*)/plugins=(${NEW_PLUGINS})/" "${CONFIG_FILE}"
 
 # 设置默认 shell 为 zsh
 chsh -s "$(command -v zsh)"
+
+
+# 启动 zsh
+zsh
 
 # 提示用户手动重启 shell
 echo '##################'
