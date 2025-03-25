@@ -27,7 +27,7 @@ chsh -s "$(command -v zsh)"
 
 # 启动 zsh
 zsh
-
+source ~/.zshrc
 # 提示用户手动重启 shell
 echo '##################'
 echo 'Installation complete!'
